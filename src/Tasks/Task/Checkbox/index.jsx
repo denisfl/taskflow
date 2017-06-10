@@ -3,13 +3,10 @@ import "./styles.css";
 
 export default ({ checked, disabled }) => (
   <button className="Checkbox">
-    {!checked &&
-      <svg className="Checkbox-icon">
-        <use xlinkHref="#icon-checkbox-unchecked" />
-      </svg>}
-    {checked &&
-      <svg className="Checkbox-icon">
-        <use xlinkHref="#icon-checkbox-checked" />
-      </svg>}
+    <svg className="Checkbox-icon">
+      {checked
+        ? <use xlinkHref="#icon-checkbox-checked" />
+        : <use xlinkHref="#icon-checkbox-unchecked" />}
+    </svg>
   </button>
 );
