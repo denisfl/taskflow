@@ -5,3 +5,11 @@ install:
   - npm install
 script:
   - npm run test
+after_success:
+  - surge --project ./build --domain taskflow.surge.sh
+
+deploy:
+  provider: surge
+  project: ./build/
+  domain: taskflow.surge.sh  
+
