@@ -1,0 +1,40 @@
+.Checkbox {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.Checkbox:focus {
+  outline: none;
+}
+
+.Checkbox:focus::after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: var(--base-color);
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.Checkbox:hover>.Checkbox-icon {
+  fill: var(--active-color);
+}
+
+.Checkbox-icon {
+  position: relative;
+  z-index: 1;
+  top: 2px;
+  width: 1em;
+  height: 1em;
+}

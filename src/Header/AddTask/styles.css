@@ -1,0 +1,27 @@
+.AddTask {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: var(--main-width);
+  height: var(--header-height);
+}
+
+.AddTask-field {
+  width: 100%;
+  padding: 8px 10px;
+  height: 36px;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--base-border-radius);
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.AddTask-field:hover,
+.AddTask-field:focus {
+  border-color: var(--active-color);
+}
+
+.AddTask-field:focus {
+  outline: none;
+}

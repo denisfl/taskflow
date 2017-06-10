@@ -1,0 +1,7 @@
+.AppHeader {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+  background-color: var(--header-color);
+}

@@ -1,0 +1,34 @@
+:root {
+  /* Colors */
+  --base-color: #f2f2f2;
+  --header-color: #fff;
+  --active-color: #2196F3;
+  --primary-color: #464D54;
+  --color-havelock-blue: #61A2DA;
+  /* Fonts */
+  --base-font-size: 14px;
+  --base-font-family: Helvetica, Arial, sans-serif;
+  /* Sizes*/
+  --header-height: 60px;
+  --main-width: 66%;
+  --base-border-radius: 4px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.4;
+  color: var(--primary-color);
+  background-color: var(--base-color);
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+}

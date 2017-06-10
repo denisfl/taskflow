@@ -1,0 +1,10 @@
+.App {
+  min-height: 100vh;
+}
+
+.AppMain {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 56px;
+  width: var(--main-width);
+}

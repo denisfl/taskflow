@@ -1,0 +1,56 @@
+.Task {
+  display: flex;
+  margin-bottom: 1px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: var(--base-border-radius);
+}
+
+.Task.is-active,
+.Task:focus {
+  box-shadow: inset 0 0 0 2px var(--active-color);
+}
+
+.Task-content {
+  display: flex;
+  padding-right: 10px;
+  align-items: center;
+  flex: 1;
+  overflow: hidden;
+}
+
+.Task-contentEdit {
+  flex: 1;
+  position: relative;
+}
+
+.Task-contentInput {
+  width: 100%;
+  height: 48px;
+  border: none;
+  background-color: transparent;
+}
+
+.Task-contentText {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.Task-controls {
+  display: flex;
+  align-items: center;
+}
+
+.Task-saveBtn {
+  margin: 0;
+  padding: 16px 14px;
+  background-color: transparent;
+  border: none;
+  color: var(--primary-color);
+}
+
+.Task-saveBtn:hover,
+.Task-saveBtn:focus {
+  color: var(--active-color);
+}
