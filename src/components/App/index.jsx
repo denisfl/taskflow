@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import "./App.css";
+import "./styles.css";
 
-import Header from "./Header";
-import SVGSprite from "./SVGSprite";
-import Tasks from "./Tasks/List";
+import Header from "../Header";
+import SVGSprite from "../SVGSprite";
+// import Tasks from "../Tasks/List";
+import VisibleTasks from "../Tasks/VisibleTasks";
 
 class App extends Component {
   render() {
@@ -12,7 +13,7 @@ class App extends Component {
         <SVGSprite />
         <Header />
         <div className="AppMain">
-          <Tasks />
+          <VisibleTasks />
         </div>
       </div>
     );
